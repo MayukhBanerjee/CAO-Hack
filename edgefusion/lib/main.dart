@@ -1,3 +1,4 @@
+import 'package:edgefusion/screens/splash_scr.dart';
 import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
 
@@ -12,10 +13,7 @@ class EdgeFusionApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'EdgeFusion',
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-      ),
-      home: HomeScreen(),
+      home: SplashScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
