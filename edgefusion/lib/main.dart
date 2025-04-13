@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'screens/home_screen.dart';
 
-import 'package:edgefusion/home_screen.dart';
-
-void main() => runApp(EdgeFusionApp());
+void main() {
+  runApp(EdgeFusionApp());
+}
 
 class EdgeFusionApp extends StatelessWidget {
+  const EdgeFusionApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -12,7 +15,7 @@ class EdgeFusionApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
-      home: HomePage(),
+      home: HomeScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
